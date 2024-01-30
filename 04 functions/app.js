@@ -4,7 +4,6 @@ class App
     runApplication()
     {
         console.log("hello world!");
-        GlobalFunction();
     }
 }
 
@@ -13,12 +12,10 @@ app.runApplication();
 
 function GlobalFunction()
 {
-    console.log("ik ben global");
-    console.log("dus je mag mij overal aanroepen");
+    console.log("global");
+    console.log("y");
 }
 
-GlobalFunction();
-GlobalFunction();
 GlobalFunction();
 
 
@@ -27,3 +24,13 @@ function aanroep()
 
 }
  aanroep();
+
+ function argumenten(shoutout)
+{
+   console.log("do you want a shoutout");
+   console.log(shoutout);
+}
+ argumenten("Super Shout out");
+
+ argumenten("Super mario kamehameha");
+ argumenten("Souls games are pretty dang cool");
