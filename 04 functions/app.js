@@ -2,24 +2,36 @@ class App
 {
     runApplication()
     {
-        console.log("hello world");
+        console.log("Hello world!");
+        this.runmario();
+        this.Bowserbrul();
+        let y1 = this.nummers('vier',4);
+        console.log(y1);
+        this.tekst();
     }
-
-    newClassFunction()
+    runmario()
     {
-        console.log("hello world in de niuewClassFunction");
-
+        console.log("MARIO!!")
     }
-
-    anotherFunctionWithArguments(aArgument)
+    Bowserbrul()
     {
-        console.log("kom maar met je argumanet");
-        console.log("hier:");
-        console.log(aArgument);
+        let bowser = console.log("BWAHAHA!!!")
+        return bowser
+    }
+    nummers(a,b)
+    {
+        let y = Math.log(a) + Math.log(b)
+        return y
+    }
+    tekst()
+    {
+        console.log("hey")
     }
 }
-
 let app = new App();
-app.newClassFunction();
-
-app.anotherFunctionWithArguments("mijn argument is iets...");
+app.runApplication();
+app.runmario();
+app.Bowserbrul();
+let y1 = app.nummers(4,4);
+console.log(y1);
+app.tekst();
